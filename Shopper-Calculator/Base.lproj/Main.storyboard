@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shopper_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="nBb-wY-Nv2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jQe-Y3-Aez">
+                                <rect key="frame" x="147.5" y="55" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="b6K-ch-9x2"/>
+                                    <constraint firstAttribute="height" constant="80" id="g6J-Wl-UFd"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAQ-YV-jBL" customClass="CurrencyTxtField" customModule="Shopper_Calculator" customModuleProvider="target">
+                                <rect key="frame" x="20" y="180" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WR4-WV-PUz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yze-02-JcZ" customClass="CurrencyTxtField" customModule="Shopper_Calculator" customModuleProvider="target">
+                                <rect key="frame" x="20" y="240" width="335" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yze-02-JcZ" firstAttribute="trailing" secondItem="hAQ-YV-jBL" secondAttribute="trailing" id="LD3-Xo-d3Y"/>
+                            <constraint firstItem="Yze-02-JcZ" firstAttribute="top" secondItem="hAQ-YV-jBL" secondAttribute="bottom" constant="20" id="NAt-f8-3m6"/>
+                            <constraint firstItem="hAQ-YV-jBL" firstAttribute="top" secondItem="jQe-Y3-Aez" secondAttribute="bottom" constant="45" id="OLv-IB-dBk"/>
+                            <constraint firstItem="jQe-Y3-Aez" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0V-Qx-pLX"/>
+                            <constraint firstItem="Yze-02-JcZ" firstAttribute="height" secondItem="hAQ-YV-jBL" secondAttribute="height" id="bO1-Td-gp7"/>
+                            <constraint firstItem="nBb-wY-Nv2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="czG-jB-Xiz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAQ-YV-jBL" secondAttribute="trailing" constant="20" id="d9S-T5-Kdx"/>
+                            <constraint firstItem="jQe-Y3-Aez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="gnf-Mx-O4K"/>
+                            <constraint firstItem="nBb-wY-Nv2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lp3-ny-y3j"/>
+                            <constraint firstItem="nBb-wY-Nv2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q47-tj-LJr"/>
+                            <constraint firstItem="Yze-02-JcZ" firstAttribute="leading" secondItem="hAQ-YV-jBL" secondAttribute="leading" id="rAY-AK-gVy"/>
+                            <constraint firstItem="hAQ-YV-jBL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rKk-v3-kNJ"/>
+                            <constraint firstItem="nBb-wY-Nv2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wtN-hK-Za3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="Yze-02-JcZ" id="AC9-rN-wWn"/>
+                        <outlet property="wageTxtField" destination="hAQ-YV-jBL" id="yGc-CJ-Jpc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="windowShopperBG" width="414" height="736"/>
+        <image name="windowShopperIcon" width="115" height="115"/>
+    </resources>
+</document>
